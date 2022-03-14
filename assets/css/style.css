@@ -25,7 +25,7 @@ header a {
 }
 
 header nav {
-    margin: 7px 0;
+    margin: 15px 0;
 }
 
 header nav ul{
@@ -39,7 +39,7 @@ header nav ul{
 header nav ul li a {
     padding: 10px 15px;
     font-weight: normal;
-    font-size: 1.55vw;
+    font-size: 1.60vw;
 }
 
 header nav ul li a:hover {
@@ -47,6 +47,11 @@ header nav ul li a:hover {
     color: black;
     border-radius: 10px;
     text-shadow: none;
+}
+
+.my-facts p {
+    font-size: 2vw;
+    text-align: left;
 }
 
 .projects {
@@ -66,10 +71,17 @@ header nav ul li a:hover {
 
 .project img {
     display: block;
+    justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     
+}
+
+.project img:hover, .my-info address a:hover {
+    background: lightblue;
+    border-radius: 10px;
+    text-shadow: none;
 }
 
 .project-bio {
@@ -79,12 +91,17 @@ header nav ul li a:hover {
 
 .project-name, .project-info {
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5vw;
 }
 
 .flex-row h2 {
     font-size: 36px;
 }
+
+.my-info {
+    font-size: 1.5vw;
+}
+
 
 footer {
     display: flex;
