@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: lightseagreen;
+}
+
+html {
+    border: 8px solid black;
 }
 
 body {
@@ -14,9 +19,8 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     font-size: 2vw;
-    background-color: lightseagreen;
-    border: 5px solid black;
     padding: 20px 35px;
+    border-bottom: 8px solid black;
 }
 
 header a {
@@ -49,8 +53,14 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
+.my-facts {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 8px solid black;
+}
+
 .my-facts p {
-    font-size: 2vw;
+    font-size: 24px;
     text-align: left;
 }
 
@@ -60,8 +70,7 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: lightseagreen;
-    border: 5px solid black;
+    border-bottom: 8px solid black;
 }
 
 .project {
@@ -102,13 +111,12 @@ header nav ul li a:hover {
     font-size: 1.5vw;
 }
 
-
 footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background: lightseagreen;
-    border: 5px solid black;
-    font-weight: lighter; 
+    font-size: 28px;
+    font-style: italic;
+    font-weight: bold; 
     line-height: 1.5;
 }
