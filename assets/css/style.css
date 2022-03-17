@@ -138,12 +138,7 @@ header nav ul li a:hover {
 .my-links, .my-links p, .my-links a {
     display: flex;
     flex-direction: row;
-<<<<<<< HEAD
     margin: 0 50px 0 50px;
-=======
-    justify-content: space-evenly;
-    margin: auto 15px auto 15px;
->>>>>>> 765e08e9efdf38ec58270eb4b3fb4f4343d960e4
 }
 
 footer {
