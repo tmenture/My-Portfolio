@@ -99,13 +99,23 @@ header nav ul li a:hover {
 }
 
 .run-buddy-img {
-    height: 45%;
+    height: 45.5%;
     width: 25%;
 }
 
 .project-bio {
     padding: 25px;
     line-height: 1.3;
+}
+
+.project-info, .project-info a {
+    background-color:lightblue;
+    border-radius: 5%;
+}
+
+.project-info a:hover {
+    background: lightseagreen;
+    border-radius: 5%;
 }
 
 .project-name, .project-info {
@@ -126,13 +136,13 @@ header nav ul li a:hover {
     display: flex;
     justify-content:space-between;
     font-size: 1.5vw;
-    border-bottom: 5px solid black;
 }
 
 .my-links, .my-links p, .my-links a {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin: 0 15px 0 15px;
 }
 
 footer {
