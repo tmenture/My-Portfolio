@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: lightseagreen;
+    background-color: lightseagreen; 
 }
 
 html {
@@ -73,6 +73,11 @@ header nav ul li a:hover {
     border-bottom: 5px solid black;
 }
 
+.projects article {
+    display: block;
+    align-items: center;
+}
+
 .project {
     margin: 20px;
     flex: 1;
@@ -93,6 +98,11 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
+.run-buddy-img {
+    height: 45%;
+    width: 25%;
+}
+
 .project-bio {
     padding: 25px;
     line-height: 1.3;
@@ -103,8 +113,9 @@ header nav ul li a:hover {
     font-size: 1.5vw;
 }
 
-.flex-row {
+.flex-row h2 {
     display: flex;
+    justify-content: space-between;
 }
 
 .flex-row h2 {
@@ -112,40 +123,16 @@ header nav ul li a:hover {
 }
 
 .my-info {
+    display: flex;
+    justify-content:space-between;
     font-size: 1.5vw;
     border-bottom: 5px solid black;
 }
 
-.contact-form textarea {
-    border: 1px solid black;
-    display: block;
-    padding: 7px 15px;
-    font-size: 1.25vw;
-    margin-bottom: 15px;
-    margin-top: 5px;
-    border-radius: 10px;
-    background-color: lightseagreen;
-}
-
-.contact-form textarea:hover, .contact-form textarea:focus {
-    background-color: lightblue;
-    outline: none;
-}
-
-.contact-form button {
-    width: 16.5%;
-    border: 1px solid black;
-    background-color: lightseagreen;
-    color: black;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 15;
-    border-radius: 10px;
-}
-
-.contact-form button:hover {
-    color: black;
-    background-color: lightblue;
+.my-links, .my-links p, .my-links a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 footer {
