@@ -60,6 +60,7 @@ header nav ul li a:hover {
 .bio {
     float: left;
     padding: 0 25px 0 25px;
+    line-height: 2.5;
 }
 
 .my-picture {
@@ -86,6 +87,7 @@ header nav ul li a:hover {
 .project-info {
     display: flex;
     flex-wrap: wrap;
+    line-height: 2;
     padding: 10px 25px 10px 25px;
 }
 
