@@ -1,122 +1,149 @@
 <!DOCTYPE html>
 <html lang="en>">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>I'm Thomas Check Me Out</title>
-        <link rel="stylesheet" href="./assets/css/style.css"/> 
-    </head>
 
-    <body>
-        <!-- Heading / Nav Bar -->
-        <header>
-            <h1> 
-                <a href="index.html">Thomas P. Menture IV</a>
-            </h1>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I'm Thomas Check Me Out</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
 
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about-me">About Me</a>
-                    </li>
+<body>
+    <!-- Heading / Nav Bar -->
+    <header>
+        <h1>
+            <a href="index.html">Thomas P. Menture IV</a>
+        </h1>
 
-                    <li>
-                        <a href="#deployed-projects">Deployed Projects</a>
-                    </li>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about-me">About Me</a>
+                </li>
 
-                    <li>
-                        <a href="#contact-me">Contact Me</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+                <li>
+                    <a href="#deployed-projects">Deployed Projects</a>
+                </li>
 
+                <li>
+                    <a href="#contact-me">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
         <!-- About Me Section -->
         <section id="about-me">
             <article class="my-facts">
                 <h2 class="section-title"> About Me: </h2>
-                <div class="bio">
-                    <p>
-                        Hello, if you made it here you already know my name is Thomas.
-                        I am currently enrolled in the Rutgers Coding Bootcamp. At first I was nervous
-                        but as I progress through each module it becomes clearer, to me, that this is where
-                        I want to be. Beside my interest in coding, I enjoy playing games with friends, traveling.
-                        hiking, and occasionally going on my own adventures.
-                        <br />
-                        I have had a great time working on the projects you are about to check out. Each
-                        one taught me something new, wether it was an issue I encountered, or 
-                        a moment of genius, these projects have made me the developer you're looking into.  
-                    </p>
+                <div class="flex-reverse">
+                    <div class="bio">
+                        <p>
+                            Hello, if you made it here you already know my name is Thomas.
+                            I am currently enrolled in the Rutgers Coding Bootcamp. At first I was nervous
+                            but as I progress through each module it becomes clearer, to me, that this is where
+                            I want to be. Beside my interest in coding, I enjoy playing games with friends, traveling.
+                            hiking, and occasionally going on my own adventures.
+                            <br />
+                            I have had a great time working on the projects you are about to check out. Each
+                            one taught me something new, wether it was an issue I encountered, or
+                            a moment of genius, these projects have made me the developer you're looking into.
+                        </p>
+                    </div>
+
+                    <div class="my-picture">
+                        <div>
+                            <img src="./assets/images/portfolio-pic.jpg"
+                                alt="To the right of the text is a picture of me, and a good friend enjoying a NJ Devils hockey game.">
+                        </div>
+                    </div>
                 </div>
 
-                <div class="my-picture">
-                    <img src="./assets/images/portfolio-pic.jpg" alt="To the right of the text is a picture of me, and a good friend enjoying a NJ Devils hockey game.">
-                </div>
-
-            </article>
+            </article> 
         </section>
 
         <!-- Deployed Project Links-->
-        <section id="deployed-projects">
+        <section id="deployed-projects" class="project-main">
 
             <div class="flex-row">
                 <h2 class="section-title"> Deployed Projects: </h2>
             </div>
 
             <div class="projects">
-                <article class="project">
-                    <a href="https://tmenture.github.io/run-buddy/">
-                        <img class="run-buddy-img" src="./assets/images/run-buddy-logo.png" alt="Two people running, next to Run Buddy's text logo." />
-                    </a>
+                <article class="main-project">
+                    <div class="main-p-div">
+                        <a href="https://tmenture.github.io/run-buddy/">
+                            <img class="run-buddy-img" src="./assets/images/run-buddy-logo.png"
+                                alt="Two people running, next to Run Buddy's text logo." />
+                        </a>
+                    </div>
                     <div class="project-bio">
                         <h3 class="project-name"> Run Buddy </h3>
-                        <p class="project-info"> 
-                            This project is a landing page for a fitness organization. Its goal is to match people with trainers that match their fitness needs, and assists them in reaching their goals. Click on the picture to checkout this project!
-                            <br /> 
-                            Check out my git repository, for the project, here: <a href="https://github.com/tmenture/run-buddy">Git Repository</a>
+                        <p class="project-info">
+                            This project is a landing page for a fitness organization. Its goal is to match people with
+                            trainers that match their fitness needs, and assists them in reaching their goals. Click on
+                            the
+                            picture to checkout this project!
+                            <br />
+                            Check out my git repository, for the project, here: <a
+                                href="https://github.com/tmenture/run-buddy">Git Repository</a>
                         </p>
                     </div>
-                </article> 
+                </article>
 
                 <article class="project">
-                    <a href="https://tmenture.github.io/robot-gladiators">
-                        <img src="./assets/images/fighting-bots.png" alt="Robots fighting.">
-                    </a>
+                    
                     <div class="project-bio">
                         <h3 class="project-name"> Robot Fight Club </h3>
                         <p class="project-info">
-                            This small window game was made entirely fom java script. Click on it and test your luck in Robot Figt Club. Using console.log and window features [like prompt and alert] you can battle the elite set of challengers in the ring!
-                            <br />
+                            This small window game was made entirely fom java script. Click on it and test your luck in
+                            Robot Figt Club. Using console.log and window features [like prompt and alert] you can
+                            battle the elite set of challengers in the ring!
                             Check out my git repository, for the project, here: <a href="https://github.com/tmenture/robot-gladiators">Git Repository</a>
                         </p>
                     </div>
-                </article>
 
-                <article class="project">
-                    <a href="https://www.deviantart.com/panda-fanclub">
-                        <img src="./assets/images/panda-fan-club.png" alt="Cute Panda eating bamboo." />
-                    </a>
-                    <div class="project-bio">
-                        <h3 class="project-name"> Panda Fan Page </h3>
-                        <p class="project-info"> 
-                            This is a place holder, that I did not create, hosting images of cute pandas. Check this out if you need a dose of serotonin. Click on the picture to checkout this project!
-                            <br />
-                            Check out my git repository, for the project, here: <a href="">Git Repository</a>
-                        </p>
+                    <div>
+                        <a href="https://tmenture.github.io/robot-gladiators">
+                            <img src="./assets/images/fighting-bots.png" alt="Robots fighting.">
+                        </a>
                     </div>
                 </article>
 
                 <article class="project">
-                    <a href="https://www.reddit.com/r/Foofighters/">
-                        <img src="./assets/images/foo-fighters-logo.png" alt="Foo Fighters Band Logo" /> 
-                    </a>
+                    
+                    <div class="project-bio">
+                        <h3 class="project-name"> Panda Fan Page </h3>
+                        <p class="project-info">
+                            This is a place holder, that I did not create, hosting images of cute pandas. Check this out
+                            if you need a dose of serotonin. Click on the picture to checkout this project!
+                            Check out my git repository, for the project, here: <a href="">Git Repository</a>
+                        </p>
+                    </div>
+
+                    <div>
+                        <a href="https://www.deviantart.com/panda-fanclub">
+                            <img src="./assets/images/panda-fan-club.png" alt="Cute Panda eating bamboo." />
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project">
+                    
                     <div class="project-bio">
                         <h3 class="project-name"> Foo Fighters Fan Page </h3>
-                        <p class="project-info"> 
-                            This is another place holder, this is one of my favorite bands so I linked their reddit fan page to help fill out my project. Click on the picture to checkout this project!
-                            <br /> 
+                        <p class="project-info">
+                            This is another place holder, this is one of my favorite bands so I linked their reddit fan
+                            page to help fill out my project. Click on the picture to checkout this project!
                             Check out my git repository, for the project, here: <a href="">Git Repository</a>
-                        </p> 
+                        </p>
+                    </div>
+
+                    <div>
+                        <a href="https://www.reddit.com/r/Foofighters/">
+                            <img src="./assets/images/foo-fighters-logo.png" alt="Foo Fighters Band Logo" />
+                        </a>
                     </div>
                 </article>
             </div>
@@ -130,16 +157,18 @@
             <address class="my-links">
                 <p>Phone: 609-384-4628</p> <br />
                 <p>Git Hub: <a href="https://github.com/tmenture">Tom's Git Hub</a></p> <br />
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/thomas-menture-a3b342232/">Thomas Menture</a></p> <br />
-                <p>Email: <a href="mailto:thomasoxemail@gmail.com">thomasoxemail@gmail.com</a></p> 
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/thomas-menture-a3b342232/">Thomas Menture</a></p>
+                <br />
+                <p>Email: <a href="mailto:thomasoxemail@gmail.com">thomasoxemail@gmail.com</a></p>
             </address>
         </section>
+    </main>
+    <!-- Closing Statement -->
+    <footer>
+        <p>
+            Thank you for checking me out! Can't wait to hear from you.
+        </p>
+    </footer>
+</body>
 
-        <!-- Closing Statement -->
-        <footer>
-            <p>
-                Thank you for checking me out! Can't wait to hear from you.
-            </p>
-        </footer>
-    </body>
 </html>

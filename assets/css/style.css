@@ -52,42 +52,72 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 .my-facts {
     display: flex;
     font-size: 24px;
 }
 
 .bio {
-    float: left;
+    flex: 3;
     padding: 0 25px 0 25px;
     line-height: 2.5;
 }
 
+.flex-reverse {
+    display: flex;
+}
+
 .my-picture {
     display: flex;
-    float: right;
-    width: 400px;
+    flex: 1;
+    justify-content: center;
+}
+
+.my-picture img {
+    height: 100%;
+}
+
+.my-picture div {
     height: 400px;
+}
+
+.project-main {
+    display: flex;
 }
 
 .projects {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
     font-size: 24px;
+    width: 80vw;
+}
+
+.project {
+    display: flex;
+    width: 100%;
+}
+
+.project div {
+    display: flex;
+    width:75%;
 }
 
 .project img {
     display: flex;
     flex-wrap: wrap;
-    float: left;
-    width: 35%;
-    height: 45%;
+    width: 65%;
 }
 
 .project-info {
     display: flex;
     flex-wrap: wrap;
-    line-height: 2;
+    line-height: 1.5;
     padding: 10px 25px 10px 25px;
 }
 
@@ -100,17 +130,15 @@ header nav ul li a:hover {
 }
 
 
-.project img:hover, .my-info address a:hover {
+.project img:hover {
     align-items: center;
     background: lightblue;
     border-radius: 10px;
     text-shadow: none; 
 }
 
-.project-info a:hover {
-    align-items: center;
-    background: lightseagreen;
-    border-radius: 5%;
+.project-bio a:hover, .my-info address a:hover {
+    color: white;
 }
 
 .my-info {
@@ -137,6 +165,28 @@ footer {
     line-height: 1.5;
 }
 
+.main-project {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-p-div {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    width: 70%;
+}
+
+.main-project img {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.main-project img:hover {
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 980px) {
     header {
         padding-bottom: 0;
@@ -158,6 +208,18 @@ footer {
     header nav ul li a {
         font-size: 20px;
     }
+    .project {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .project-main {
+        flex-direction: column;
+    }
+
+    .project-bio {
+        display: flex;
+    }
 
     .my-links, .my-links p {
         margin: 0 20px 0 20px;
@@ -169,38 +231,42 @@ footer {
     }
 
     .flex-row {
+        display: flex;
         width: 80%;
     }
 
-    .project {
+    .projects {
         flex: 0 70%;
     }
 }
 
 @media screen and (max-width: 768px) {
-    section {
-        padding: 30px 15px;
-    }
-
-    footer p {
-        justify-content: center;
+    .my-facts {
+        flex-direction: column;
     }
 }
 
 @media screen and (max-width: 575px) {
     .flex-row {
+        flex-direction: column;
         width: 95%;
     }
 
+    .flex-reverse {
+        flex-direction: column-reverse;
+        line-height: 1.5;
+    }
+
+    .project-main {
+        flex-direction: column;
+    }
+
     .project {
+        flex-direction: column-reverse;
         flex: 0 100%;
     }
 
-    .my-info {
-        align-items: center;
-    }
-
-    .my-info > * {
-        flex: 0 100%;
+    .project-bio {
+        flex-direction: column;
     }
 }
